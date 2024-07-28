@@ -1,15 +1,8 @@
-
-# CarbonInsight
-
-An Emissions Analytics Repository
-
-
-
 ## Introduction
-The agricultural sector contributes to almost 62% of the total global Co2 emissions, making a significant contributor to climate change. The aim of this project is to create a dashboard to visualize and monitor the impact of agricultural activities on Co2 emissions. In order to create the Power BI dashboard, we will be employing several data engineering tools and principles along the way.
+The agricultural sector is responsible for approximately 62% of the total global CO2 emissions, making it a major contributor to climate change. This project aims to develop a dashboard that visualizes and monitors the impact of agricultural activities on CO2 emissions. To build the Power BI dashboard, we will utilize various data engineering tools and principles throughout the process.
 
-## Proposed Architecture
-The source data will reside in the Azure blob storage where every time a new source file is added, the Azure Data Factory pipeline will ingest into our raw container which is Azure Data Lake Storage Gen 2 (there would be an event trigger set on the pipeline). After the data is present in the raw container, we would be using Data Flows to make basic transformations as the data source does not require a lot of complex transformations and proceed to store it in our gold layer which is also a ADLS Gen 2, after which we will make the cleaned data available for visualization at Power BI. Below is the architecture diagram of the proposed solution!
+## Project Architecture
+The source data will be stored in Azure Blob Storage. Whenever a new source file is added, an Azure Data Factory pipeline will automatically ingest it into our raw container within Azure Data Lake Storage Gen 2, triggered by an event. After the data is in the raw container, we will use Data Flows to perform basic transformations, as the data source does not require complex modifications. The transformed data will then be stored in our gold layer, also in ADLS Gen 2. Finally, the cleaned data will be made available for visualization in Power BI. Below is the architecture diagram of the proposed solution!
 ![Diagram](misc/ArchitectureDiagram.png)
 
 
