@@ -1,0 +1,15 @@
+{
+	"name": "carbon-emission-reporting",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "3dcc3d7b-b38f-4234-8aeb-628772337869",
+		"tenantId": "74a2c708-3321-40c8-85ae-138044358af8",
+		"userAssignedIdentities": {
+			"/subscriptions/8a19f03e-3561-45b6-b688-5b309ccd3cd2/resourcegroups/CarbonEmission/providers/Microsoft.ManagedIdentity/userAssignedIdentities/emissions-mi": {
+				"clientId": "4b068003-32e1-43c6-b281-1275a5002209",
+				"principalId": "c9e42de0-f239-41bd-ba38-e2ac4c9cb0f3"
+			}
+		}
+	}
+}

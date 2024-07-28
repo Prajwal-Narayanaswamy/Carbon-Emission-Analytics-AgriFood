@@ -1,0 +1,148 @@
+{
+	"name": "emissions_gold_layer",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "emissionsadls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "TotalEmissionsCombined.csv",
+				"fileSystem": "gold"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Area",
+				"type": "String"
+			},
+			{
+				"name": "Year",
+				"type": "String"
+			},
+			{
+				"name": "Savanna fires",
+				"type": "String"
+			},
+			{
+				"name": "Forest fires",
+				"type": "String"
+			},
+			{
+				"name": "Crop Residues",
+				"type": "String"
+			},
+			{
+				"name": "Rice Cultivation",
+				"type": "String"
+			},
+			{
+				"name": "Drained organic soils (CO2)",
+				"type": "String"
+			},
+			{
+				"name": "Pesticides Manufacturing",
+				"type": "String"
+			},
+			{
+				"name": "Food Transport",
+				"type": "String"
+			},
+			{
+				"name": "Forestland",
+				"type": "String"
+			},
+			{
+				"name": "Net Forest conversion",
+				"type": "String"
+			},
+			{
+				"name": "Food Household Consumption",
+				"type": "String"
+			},
+			{
+				"name": "Food Retail",
+				"type": "String"
+			},
+			{
+				"name": "On-farm Electricity Use",
+				"type": "String"
+			},
+			{
+				"name": "Food Packaging",
+				"type": "String"
+			},
+			{
+				"name": "Agrifood Systems Waste Disposal",
+				"type": "String"
+			},
+			{
+				"name": "Food Processing",
+				"type": "String"
+			},
+			{
+				"name": "Fertilizers Manufacturing",
+				"type": "String"
+			},
+			{
+				"name": "IPPU",
+				"type": "String"
+			},
+			{
+				"name": "Manure applied to Soils",
+				"type": "String"
+			},
+			{
+				"name": "Manure left on Pasture",
+				"type": "String"
+			},
+			{
+				"name": "Manure Management",
+				"type": "String"
+			},
+			{
+				"name": "Fires in organic soils",
+				"type": "String"
+			},
+			{
+				"name": "Fires in humid tropical forests",
+				"type": "String"
+			},
+			{
+				"name": "On-farm energy use",
+				"type": "String"
+			},
+			{
+				"name": "Rural population",
+				"type": "String"
+			},
+			{
+				"name": "Urban population",
+				"type": "String"
+			},
+			{
+				"name": "Total Population - Male",
+				"type": "String"
+			},
+			{
+				"name": "Total Population - Female",
+				"type": "String"
+			},
+			{
+				"name": "total_emission",
+				"type": "String"
+			},
+			{
+				"name": "Average Temperature °C",
+				"type": "String"
+			}
+		]
+	}
+}

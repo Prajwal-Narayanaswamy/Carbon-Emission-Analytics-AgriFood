@@ -1,0 +1,16 @@
+{
+	"name": "emissionsourcesa",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"serviceEndpoint": "https://carbonemissionsa.blob.core.windows.net/",
+			"accountKind": "StorageV2",
+			"credential": {
+				"referenceName": "Emissions-MUI",
+				"type": "CredentialReference"
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"name": "Event Trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Emission Master",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/emissions/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/8a19f03e-3561-45b6-b688-5b309ccd3cd2/resourceGroups/CarbonEmission/providers/Microsoft.Storage/storageAccounts/carbonemissionsa",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
