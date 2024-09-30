@@ -10,3 +10,8 @@ The source data will be stored in Azure Blob Storage. Whenever a new source file
 
 Data used in this project has been obtained from [Kaggle](https://www.kaggle.com/datasets/alessandrolobello/agri-food-co2-emission-dataset-forecasting-ml)
 
+## Dashboard
+
+
+[Dashboard](https://github.com/Prajwal-Narayanaswamy/Carbon-Emission-Analytics-AgriFood/blob/main/powerbi/report%20snapshot.png)
+
